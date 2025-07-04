@@ -10,4 +10,23 @@ class CalculatriceTest extends TestCase
         $calculatrice = new Calculatrice();
         $this->assertEquals(5, $calculatrice->calculer(2, 3, '+'));
     }
+
+    public function testSoustraction()
+    {
+        $calculatrice = new Calculatrice();
+        $this->assertEquals(-1, $calculatrice->calculer(2, 3, '-'));
+    }
+
+    public function testMultiplication()
+    {
+        $calculatrice = new Calculatrice();
+        $this->assertEquals(6, $calculatrice->calculer(2, 3, '*'));
+    }
+
+    public function testDivision()
+    {
+        $calculatrice = new Calculatrice();
+        $this->assertEquals(2, $calculatrice->calculer(6, 3, '/'));
+    }
+
 }
