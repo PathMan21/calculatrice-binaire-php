@@ -21,3 +21,7 @@ Tests et commandes à utiliser :
 
 test unitaire : composer test     
 Toutes les commandes ensemble : composer analyse 
+
+
+2. **Lancer l'interface visuelle :**
+php -S localhost:8000 -t public
